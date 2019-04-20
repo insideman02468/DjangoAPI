@@ -1,0 +1,44 @@
+https://qiita.com/aqyabe/items/f7f442dc4012ec67a0ec
+
+install docker-compose
+
+$ sudo -i
+# curl -L "https://github.com/docker/compose/releases/download/1.12.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# chmod +x /usr/local/bin/docker-compose
+# exit
+$ sudo docker-compose -v
+docker-compose version 1.12.0, build b31ff33
+
+###Procfile
+[mysite].wsgi
+
+sudo docker-compose build
+
+docker-compose up
+docker ps
+### enter docker command prompt
+docker exec -i -t heroku_web_1 bash
+
+###
+docker-compose stop
+
+sudo chown -R $USER:$USER .
+
+sudo docker-compose run web django-admin.py startproject mysite .
+
+heroku create
+
+git push heroku master
+
+heroku ps:scale web=1
+
+heroku open
+
+heroku run python manage.py migrate
+
+heroku run pyrhon manage.py createsuperuser
+
+docker container prune
+docker volume prune
+docker image prune
